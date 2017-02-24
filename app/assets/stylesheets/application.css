@@ -119,19 +119,26 @@ h2 {
   font-size: 14px;
 }
 
-input[type=submit] {
+input[type=submit], .changes a {
 
   padding: 5px 10px;
   width: 40%;
   margin: 20px auto;
-  color: black;
+  color: #dedede;
   font-family: "Montalban";
   font-size: 18px;
   cursor: pointer;
   border: 1px solid #9f0;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, .changes a:hover {
   background: #dedede;
   color: #9f0;
+}
+
+.changes div {
+  text-align: center;
+}
+.changes a {
+  width: 80%;
 }
