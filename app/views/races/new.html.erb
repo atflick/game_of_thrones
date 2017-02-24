@@ -1,0 +1,23 @@
+<h2>Add New Race</h2>
+<section>
+  <div class="form">
+    <%= form_for @race do |f| %>
+    <%= f.label :species %>
+    <%= f.text_field :species %>
+
+    <%= f.label :alignment %>
+    <%= f.text_field :alignment %>
+
+    <%= f.label :government %>
+    <%= f.text_field :government %>
+
+    <%= f.label :insignia %>
+    <%= f.text_field :insignia %>
+
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+
+    <%= f.submit "Add"%>
+    <% end %>
+  </div>
+</section>

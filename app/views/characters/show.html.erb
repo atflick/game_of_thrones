@@ -1,0 +1,16 @@
+
+<section>
+  <div class="flex-container character-show show">
+    <div class="flex-cell-1-2">
+      <h3>Name: <%= @character.name %></h3>
+      <h4>Race: <%= Race.find(@character.race_id).species %></h4>
+      <h4>Rank: <%= @character.rank %></h4>
+      <h4>Bio:</h4>
+      <p><%= @character.bio %></p>
+    </div>
+    <div class="flex-cell-1-2">
+      <div style="background-image: url('<%= @character.img_url %>')" class="character-img"></div>
+    </div>
+    <%= link_to "Edit Character", edit_character_path(@character) %>
+  </div>
+</section>

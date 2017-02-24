@@ -1,0 +1,16 @@
+<section>
+  <div class="flex-container character-show show">
+    <div class="flex-cell-1-2">
+      <h3>Species: <%= @race.species %></h3>
+      <h4>Alignment: <%= @race.alignment %></h4>
+      <h4>Government: <%= @race.government %></h4>
+      <h4>Bio:</h4>
+      <p><%= @race.description %></p>
+      <%= link_to "Edit Race", edit_race_path(@race) %>
+    </div>
+    <div class="flex-cell-1-2">
+      <div style="background-image: url('<%= @race.insignia %>')" class="race-img"></div>
+    </div>
+
+  </div>
+</section>

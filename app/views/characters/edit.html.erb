@@ -1,0 +1,26 @@
+<h2>Edit Character</h2>
+<section>
+  <div class="form">
+    <%= form_for @character do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :rank %>
+    <%= f.text_field :rank %>
+
+    <%= f.label "Image URL" %>
+    <%= f.text_field :img_url %>
+
+    <%= f.label :bio %>
+    <%= f.text_area :bio %>
+
+    <%= f.label "Race" %>
+    <%= f.collection_select(:race_id, Race.all, :id, :species, prompt: true) %>
+
+
+    <%= f.submit "Add"%>
+    <% end %>
+
+    <%= link_to "Remove Character", character_path(@character), method: :delete %>
+  </div>
+</section>

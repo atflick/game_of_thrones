@@ -1,3 +1,60 @@
 // Place all the styles related to the Characters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.characters {
+
+}
+
+.character {
+
+  img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+  }
+}
+
+.character-show {
+
+  img {
+    width: 250px;
+    width: 250px;
+    object-fit: cover;
+  }
+}
+
+.character-img {
+  background-size: cover;
+  width:100%;
+}
+
+.character-img:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+.show {
+  span {
+    color: #9f0;
+  }
+  h3 {
+    border-bottom: 1px solid #9f0;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  h4 {
+    border-bottom: 1px solid #9f0;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  p {
+    border-bottom: 1px solid #9f0;
+    margin-bottom: 5px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
